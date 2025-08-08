@@ -1,0 +1,15 @@
+.swiper-container {
+  max-width: 80vw;
+  align-self: center;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slide-content p,
+.slide-content h3 {
+  margin: 20px 0;
+}

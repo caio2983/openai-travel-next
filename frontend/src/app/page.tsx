@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import { FormEvent, useState } from "react";
+import SwiperLocations from "./components/SwiperLocations/SwiperLocations";
 
 export default function Home() {
   const router = useRouter();
@@ -47,6 +48,8 @@ export default function Home() {
           Após enviar, você será redirecionado para o roteiro personalizado.
         </p>
       </form>
+
+      <SwiperLocations></SwiperLocations>
     </div>
   );
 }
