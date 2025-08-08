@@ -1,4 +1,5 @@
 @import url("./home.css");
+@import url("./roteiro/[location]/LocationPage.css");
 
 :root {
   --background: #ffffff;
