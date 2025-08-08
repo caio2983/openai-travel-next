@@ -1,6 +1,6 @@
 import express from "express";
 import bodyParser from "body-parser";
-import { AzureOpenAI } from "openai";
+import { AzureOpenAI } from "openai/index.js";
 import dotenv from "dotenv";
 dotenv.config();
 
