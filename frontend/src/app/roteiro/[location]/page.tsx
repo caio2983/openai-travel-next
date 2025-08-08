@@ -1,3 +1,4 @@
+import LocationCard from "@/app/components/LocationCard/LocationCard";
 import React from "react";
 
 export default function LocationPage() {
@@ -22,5 +23,16 @@ export default function LocationPage() {
     },
   ];
 
-  return <div className="container">Location</div>;
+  return (
+    <div className="container location-page">
+      {tasks.map((task, index) => (
+        <LocationCard
+          key={index}
+          title={task["title"]}
+          description={task["description"]}
+          image_query={task["image_query"]}
+        />
+      ))}
+    </div>
+  );
 }
