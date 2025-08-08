@@ -14,13 +14,15 @@ export default function Input() {
     router.push(`/roteiro/${encodeURIComponent(destino.trim().toLowerCase())}`);
   }
   return (
-    <>
-      <h1 className="title">Roteiro de viagens</h1>
-      <p className="description">
-        Digite o destino e receba um roteiro personalizado com sugestões de
-        passeios, gastronomia e cultura, gerado pelo modelo GPT-35-Turbo da
-        OpenAI, implementado via Azure.
-      </p>
+    <div className="input-container">
+      <div className="input-title-and-description">
+        <h1 className="title">Roteiro de viagens</h1>
+        <p className="description">
+          Digite o destino e receba um roteiro personalizado com sugestões de
+          passeios, gastronomia e cultura, gerado pelo modelo GPT-35-Turbo da
+          OpenAI, implementado via Azure.
+        </p>
+      </div>
       <form className="form" onSubmit={handleSubmit} noValidate>
         <label htmlFor="destino" className="label">
           Quero viajar para:
@@ -43,10 +45,7 @@ export default function Input() {
         >
           Gerar roteiro
         </button>
-        <p id="destinoHelp" className="description">
-          Após enviar, você será redirecionado para o roteiro personalizado.
-        </p>
       </form>
-    </>
+    </div>
   );
 }
