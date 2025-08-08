@@ -2,6 +2,7 @@
 @import url("./roteiro/[location]/LocationPage.css");
 @import url("./components/SwiperLocations/SwiperLocations.css");
 @import url("./components/Input/Input.css");
+@import url("./components/LocationCard/LocationCard.css");
 
 :root {
   --background: #ffffff;

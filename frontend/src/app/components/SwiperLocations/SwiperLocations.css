@@ -20,11 +20,11 @@
 
 .image-teste {
   border: 2px solid gray;
+  border-radius: 12px;
   width: 300px;
   height: 200px;
   transition: transform 0.5s ease;
   margin: 16px 0;
-  border-radius: 12px;
 }
 
 .slide-content h3 {
