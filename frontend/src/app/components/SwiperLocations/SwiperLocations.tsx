@@ -9,11 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-export default function SwiperLocations({
-  setBackground,
-}: {
-  setBackground: React.Dispatch<React.SetStateAction<string>>;
-}) {
+export default function SwiperLocations() {
   const locations = [
     {
       title: "Paris",
@@ -68,11 +64,7 @@ export default function SwiperLocations({
       >
         {locations.map((loc, index) => (
           <SwiperSlide key={index}>
-            <div
-              className="slide-content"
-              onMouseEnter={() => setBackground(`${loc.img}`)}
-              onMouseLeave={() => setBackground("")}
-            >
+            <div className="slide-content">
               <h3>{loc.title}</h3>
               <div className="slide-image-wrapper">
                 <img src={loc.img} alt={loc.title} />
